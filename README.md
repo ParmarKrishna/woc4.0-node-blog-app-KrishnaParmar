@@ -1,6 +1,11 @@
-# Getting started with Project
-<a href="">Clone the repository</a>
-After cloning, run following commands:
+## Getting started with Project
+<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone the repository</a><br>
+
+After cloning, run following commands:<br>
+```
 npm install
+```
+```
 npm start
+```
 
