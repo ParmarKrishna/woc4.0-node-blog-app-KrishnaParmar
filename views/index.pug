@@ -1,8 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a(href='/create') Create
+  div(class="container")
+    h1(class="main-title")= title
+    p(class='welcome') Welcome to #{title}
+    a(href='/create' class="btn btn-primary") Create
   br
-  a(href='/posts') See all blogs
+  div(class="container")
+    p(class="read") See latest blogs!!
+    each b in blog
+      div(class="card blogcontainer")
+        img(src=`/images/${b.banner}`)
+        a(href=`viewpost/${b._id}` id='unique' class="all-header") #{b.title}
+        h4 #{b.gist}
+        p(style="color:gray") Created by #{b.name}
+        br

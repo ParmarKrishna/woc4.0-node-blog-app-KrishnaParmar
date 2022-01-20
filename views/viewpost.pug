@@ -1,4 +1,9 @@
 extends layout
 block content
-    div
-        h2 Page Under development :P    
+    div(class="card container blogcontainer ")
+        img(src=` /images/${blog.banner}`)
+        h3(class="blog-title") #{blog.title}
+        h4 #{blog.body}
+        p(style="color:red")  Created by #{blog.name}
+        p(style="color:gray") Created on #{blog.createdOn}
+        br   

@@ -1,4 +1,17 @@
 extends layout
 block content
-    div
-        h2 Page Under development :P
+    div(class="container")
+        h1 Post a blog
+        div(class="form-group")
+            form(method="POST" enctype="multipart/form-data" action="/posted")
+                input(type="text" name="title" class="form-control" placeholder="title" required)
+                br
+                input(type="text" name="body" class="form-control" placeholder="body" required)
+                br
+                input(type="text" name="gist"  class="form-control" placeholder="gist" required)
+                br
+                input(type="text" name="name"  class="form-control" placeholder="name" required)
+                br
+                input(type="file" id='bannerInp' accept='image/png' name='bannerImage' class="btn btn-outline-secondary")
+                br
+                input(type="submit" value="Post" class="btn btn-success")

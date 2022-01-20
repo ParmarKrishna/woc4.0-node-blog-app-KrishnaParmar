@@ -1,21 +1,29 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: wheat;
+  background-color: rgb(26, 24, 24);
 }
-
-a {
-  color: #00B7FF;
+.main-title{
+  font-size: 60px;
 }
-h2{
-  font-size: x-large;
-  font-family: cursive;
+.welcome{
+  font-size: 15px;
 }
-#one{
-  color: purple;
+.blogcontainer{
+  color: wheat;
+  background-color: rgb(26, 24, 24);
 }
-a{
-  border: none;
+.blog-title{
+  font-size: 90px;
+}
+.all-header{
+  font-size: 45px;
 }
 a:hover{
-color: black;
+  color: white;
+}
+.card{
+  margin-bottom: 12px;
+  border-bottom:white;
 }
