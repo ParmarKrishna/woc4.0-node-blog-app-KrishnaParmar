@@ -2,7 +2,7 @@ extends layout
 block content
     a(href='/' class="btn btn-primary btn-outline") Go back
     div(class="card container blogcontainer ")
-       
+        img(src=` /images/${blog.banner}`)
         h3(class="blog-title") #{blog.title}
         h4 #{blog.body}
         p(style="color:red")  Created by #{blog.name}
